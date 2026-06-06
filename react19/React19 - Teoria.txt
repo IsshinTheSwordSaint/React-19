@@ -1,0 +1,2 @@
+Stylowanie globalne jest wspólne dla wielu elementów, a lokalne tylko dla jednego.
+Problemem jest powtarzanie padding: '10px' lepiej użyć jednej wspólnej klasy CSS.
