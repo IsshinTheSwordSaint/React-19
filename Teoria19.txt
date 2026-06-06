@@ -1,0 +1,5 @@
+Stylowanie globalne (np. plik .css) aplikuje reguły do całej aplikacji i wszystkich pasujących znaczników, co ułatwia spójność, ale grozi konfliktami nazw. Stylowanie lokalne (np. style inline, CSS Modules) ogranicza reguły wyłącznie do jednego konkretnego komponentu, zapobiegając wyciekaniu stylów.
+
+Podejście z kodu (style inline) jest problematyczne, ponieważ powoduje duplikację kodu, uniemożliwia używanie pseudoklas (np. :hover, :focus), zapytań media queries oraz zmniejsza wydajność, bo obiekty stylów są tworzone na nowo przy każdym renderowaniu.
+
+Aby uniknąć duplikacji, zorganizowałbym to poprzez stworzenie globalnych zmiennych CSS (Design Tokens) dla powtarzalnych wartości (np. --spacing-md: 10px) w jednym pliku, a następnie użył klas CSS lub narzędzi typu Tailwind CSS, aby reużywać te klasy w komponentach.
